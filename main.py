@@ -1,10 +1,10 @@
-"""
+f"""
 Food Consumption in Indonesia - ETL Pipeline
 
 This script downloads food consumption data from Kaggle, processes Excel files,
 and uploads the consolidated CSV to Supabase S3-compatible storage.
 
-Author: Your Name
+Author: Yudho Prakoso
 Date: 2025-10-25
 """
 
