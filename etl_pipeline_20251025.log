@@ -1,0 +1,41 @@
+2025-10-25 11:30:27,318 - __main__ - INFO - ======================================================================
+2025-10-25 11:30:27,318 - __main__ - INFO - STARTING ETL PIPELINE - Food Consumption in Indonesia
+2025-10-25 11:30:27,318 - __main__ - INFO - ======================================================================
+2025-10-25 11:30:27,319 - __main__ - INFO - Configuration:
+2025-10-25 11:30:27,319 - __main__ - INFO -   Dataset: saurabhshahane/food-consumption-in-indonesia
+2025-10-25 11:30:27,319 - __main__ - INFO -   Output: FoodConsumptionInIndonesia_20251025.csv
+2025-10-25 11:30:27,319 - __main__ - INFO -   Bucket: yudopr-public
+2025-10-25 11:30:27,319 - __main__ - INFO - 
+[STEP 1/5] Validating environment variables...
+2025-10-25 11:30:27,319 - __main__ - INFO - ✓ All required environment variables are set
+2025-10-25 11:30:27,319 - __main__ - INFO - 
+[STEP 2/5] Downloading dataset from Kaggle...
+2025-10-25 11:30:27,319 - __main__ - INFO - Downloading Kaggle dataset: saurabhshahane/food-consumption-in-indonesia
+2025-10-25 11:30:27,319 - __main__ - INFO - ✓ Kaggle API authenticated
+2025-10-25 11:30:28,377 - __main__ - INFO - ✓ Dataset downloaded to datasets
+2025-10-25 11:30:28,377 - __main__ - INFO - ✓ Found 1 files in datasets
+2025-10-25 11:30:28,377 - __main__ - INFO - 
+[STEP 3/5] Processing Excel files...
+2025-10-25 11:30:28,377 - __main__ - INFO - Reading 1 Excel file(s)
+2025-10-25 11:30:28,377 - __main__ - INFO -   [1/1] Reading DATASET_cultural dimension of food consumption.xlsx
+2025-10-25 11:30:28,519 - __main__ - INFO -     ✓ Loaded 710 rows
+2025-10-25 11:30:28,519 - __main__ - INFO - Combining and processing data...
+2025-10-25 11:30:28,543 - __main__ - INFO - ✓ Combined DataFrame: 710 rows × 30 columns
+2025-10-25 11:30:28,543 - __main__ - INFO -   Columns: A1_CITY, A2_PROVINCE, B3_GENDER, B4_AGE, B5_RELIGION, B6_ETHNIC, B7_EDUCATION_LEVEL, B8_LIVED_IN_URBAN_AREA_YEARS, B9_OCCUPATION, B10_SOCIAL_CLAS, B11_HOUSEHOLD_MEMBER, C12_HOUSEHOLD_INCOME_MONTHLY_IN_MILLION_IDR, C13_TIME_OF_INCOME_RECEIPT, C14_HOUSEHOLD_EXPENDITURE_MONTHLY_IN_MILLION_IDR, C15_%_MONTHLY_EXPENDITURE_FOR_FOOD, D16_HEALTH_FACTOR, D17_PRICE_FACTOR, E18_RELIGIOUS_VALUE_IN_TYPE_OF_FOOD, E19_RELIGIOUS_VALUE_IN_EATING_PLACES, E20_RELIGIOUS_VALUE_IN_CONSUMPTION_PATTERN, E21_CUSTOM_VALUE_IN_TYPE_OF_FOOD, E22_CUSTOM_VALUE_IN_EATING_PLACES, E23_CUSTOM_VALUE_IN_CONSUMPTION_PATTERN, 24_PRACTICE_OF_FOOD_CONSUMPTION_BASED_ON_RELIGIOUS_RULES, 25_PRACTICE_OF_FOOD_CONSUMPTION_BASED_ON_CUSTOM_RULES, E26_BUYING_FOOD_PRODUCT_IN_THE_RIGHT_PLACE_BASED_ON_RELIGIOUS_RULES, E27_TYPE_OF_DISHES_VARIATION_BASED_ON_RELIGIOUS_RULES, E28_PRACTICE_OF_CONSUMING_TRADITIONAL_FOOD, SOURCE_FILE, PROCESS_DATE
+2025-10-25 11:30:28,543 - __main__ - INFO - 
+[STEP 4/5] Saving to CSV...
+2025-10-25 11:30:28,543 - __main__ - INFO - Saving DataFrame to CSV: FoodConsumptionInIndonesia_20251025.csv
+2025-10-25 11:30:28,549 - __main__ - INFO - ✓ CSV saved: outputs/FoodConsumptionInIndonesia_20251025.csv (327,485 bytes)
+2025-10-25 11:30:28,549 - __main__ - INFO - 
+[STEP 5/5] Uploading to S3...
+2025-10-25 11:30:28,549 - __main__ - INFO - Uploading file: outputs/FoodConsumptionInIndonesia_20251025.csv
+2025-10-25 11:30:29,346 - __main__ - INFO - ✓ Successfully uploaded outputs/FoodConsumptionInIndonesia_20251025.csv (327,485 bytes) to s3://yudopr-public/outputs/FoodConsumptionInIndonesia_20251025.csv
+2025-10-25 11:30:29,347 - __main__ - INFO - 
+======================================================================
+2025-10-25 11:30:29,347 - __main__ - INFO - ✓ PIPELINE COMPLETED SUCCESSFULLY
+2025-10-25 11:30:29,348 - __main__ - INFO - ======================================================================
+2025-10-25 11:30:29,348 - __main__ - INFO -   Duration: 2.03 seconds
+2025-10-25 11:30:29,348 - __main__ - INFO -   Records processed: 710
+2025-10-25 11:30:29,348 - __main__ - INFO -   Output file: outputs/FoodConsumptionInIndonesia_20251025.csv
+2025-10-25 11:30:29,348 - __main__ - INFO -   S3 location: s3://yudopr-public/outputs/FoodConsumptionInIndonesia_20251025.csv
+2025-10-25 11:30:29,348 - __main__ - INFO - ======================================================================
