@@ -21,7 +21,7 @@ This project processes food consumption data from Indonesia by:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/yudopr11/cimol.git
 cd cimol
 ```
 
